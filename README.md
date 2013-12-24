@@ -43,13 +43,17 @@ Running btcLiveTools
 From the same directory as btcLiveTools.sh run the following:
 
         sudo ./btcLiveTools.sh
-You will then be prompted for the tools you would like to install.
+You will then be prompted for the tools you would like to install.  
+
+![Screenshot](https://bitmagi.com/btcLiveTools.png "Screenshot")
 
 Help
 -----
 You can get a list of optional command line arguments by running the following:
 
         sudo ./btcLiveTools.sh help
+
+![Screenshot](https://bitmagi.com/btcLiveTools2.png "Screenshot")        
 
 **Debian screensaver lock you out?**  The password is "live"
 
