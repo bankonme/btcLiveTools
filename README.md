@@ -21,7 +21,7 @@ Currently btcLiveTools provides the option to install the following software:
 
 Prerequisites
 ---------------
-**A debian cd or usb running the following:**
+**A Debian CD or usb running the following:**
 
 * [Debian Live 7.2 i386 (Most machines will run this)](http://live.debian.net/cdimage/release/stable+nonfree/i386/iso-hybrid/)
 

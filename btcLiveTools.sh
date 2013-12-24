@@ -29,7 +29,7 @@ armory_pgp_verify="alan@bitcoinarmory.com"
 ##used during debugging to speed up testing
 dev=0
 pgp_key_server="pgp.mit.edu"
-columns=90
+columns=75
 red='\e[0;31m';
 default='\e[0m';
 
