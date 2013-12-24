@@ -244,7 +244,7 @@ then
 	process_download "$file_name" "$file_url" "$file_desc" $dev
 	get_author_pgp_key "$multibit_pgp_address" "$pgp_key_server"
 	validate_file "$file_name" "$file_desc"
-	fancy_block "All Multibit files have been downloaded and validated using the author's public pgp key found at pgp.mit.edu.  The Multibit installer will be ran next, make sure and install Multibit to the default installation path, please close the multibit installer upon completion to continue running the CoinTools script"
+	fancy_block "All Multibit files have been downloaded and validated using the author's public pgp key found at pgp.mit.edu.  The Multibit installer will be ran next, make sure and install Multibit to the default installation path, please close the multibit installer upon completion to continue running the btcLiveTools script"
 	read -p "Press enter key to launch Multibit installer..."
 	printf "${default}"
 	java -jar multibit-"$multibit_version"-linux.jar
@@ -274,7 +274,7 @@ then
 	process_download "$sig_file_name" "$sig_file_url" "$sig_file_desc" $dev
 	get_author_pgp_key "$truecrypt_pgp_address" "$pgp_key_server"
 	validate_file "$sig_file_name" "$file_desc"
-	fancy_block "All Truecrypt files have been downloaded and validated using the author's public pgp key found at pgp.mit.edu.  The Truecrypt installer will be ran next, please close the Truecrypt installer upon completion to continue running the CoinTools script"
+	fancy_block "All Truecrypt files have been downloaded and validated using the author's public pgp key found at pgp.mit.edu.  The Truecrypt installer will be ran next, please close the Truecrypt installer upon completion to continue running the btcLiveTools script"
 	read -p "Press enter key to launch Truecrypt installer..."
 	tar -xzvf "$file_name"
 	./truecrypt-"$truecrypt_version"-setup-x"$i_version"
@@ -325,7 +325,7 @@ then
 	fancy_stars
 	fancy "All Bitcoin files have been downloaded and validated using the author's public pgp key."
 	fancy "${green}Bitcoin-qt has installed succesfully.  You can run a default instance of Bitcoin-qt by running the following command:"
-	fancy "\tsudo ./btcLiveTools.sh bitcoin"
+	fancy "\tsudo ./btcLiveTools.sh bitcoin-qt"
 	fancy_stars
 	read -p "press enter key to continue..."
 fi
