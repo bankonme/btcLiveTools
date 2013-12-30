@@ -290,6 +290,8 @@ read -p "Install Bitcoin-qt encryption software? (y/n)"
 
 if [ "$REPLY" = "y" ] || [ "$REPLY" = "Y" ] ;
 then
+        fancy_block "Updating apt-get"
+	apt-get update
 	fancy_block "Installing Bitcoin-qt dependencies: qt-devel libqt4-gui libqt4-network"
 	apt-get install libqt4-gui libqt4-network
 	file_url="http://downloads.sourceforge.net/project/bitcoin/Bitcoin/bitcoin-${bitcoin_version}/bitcoin-${bitcoin_version}-linux.tar.gz?r=http%3A%2F%2Fbitcoin.org%2Fen%2Fdownload&ts=1386525391&use_mirror=hivelocity"
